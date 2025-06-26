@@ -1,0 +1,9 @@
+/*
+  Remove all content and import Dublin's dark CSS for shared styling only.
+*/
+
+@import url("../dublin/style-dark.css");
+
+.itinerary-card {
+    box-shadow: none !important;
+}
