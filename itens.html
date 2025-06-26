@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itineraries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(120deg, #232526, #414345), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-blend-mode: overlay;
+            color: #fff;
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        h1 {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: 2px;
+            text-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        li {
+            transition: transform 0.2s;
+        }
+        
+        li:hover {
+            transform: scale(1.08) translateY(-4px);
+        }
+        
+        a {
+            display: block;
+            padding: 2.5rem 4rem;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 24px;
+            color: #fff;
+            font-size: 2rem;
+            font-family: 'Montserrat', Arial, sans-serif;
+            text-decoration: none;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        a:hover {
+            background: #ffb347;
+            color: #232526;
+            box-shadow: 0 6px 24px rgba(255, 179, 71, 0.18);
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            a {
+                font-size: 1.2rem;
+                padding: 1.5rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="dublin/index.html">Dublin Itinerary</a></li>
+        <li><a href="london/index.html">London Itinerary</a></li>
+    </ul>
+</body>
+
+</html>
